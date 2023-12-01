@@ -1,0 +1,37 @@
+#navbarSupportedContent {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  #checkout {
+    margin-left: 20px;
+    border: none;
+  }
+  nav {
+    color: black;
+    padding: 20px;
+    margin: 10px 0 10px 0;
+  }
+  .navbar {
+    width: 100%;
+    margin: auto;
+    background-color: white;
+  }
+  #navbar-healthyme {
+    padding: 22px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  #brand {
+    font-size: x-large;
+    color: orange;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  @media (max-width: 1250px) {
+    #Signup {
+      display: none;
+    }
+  }
+  

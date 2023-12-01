@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<style>
+  body {
+    font-family: sans-serif;
+  }
+
+  /* CSS for the h1 tag */
+  h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    background-color: #2424c9;
+    color: white;
+  }
+
+  /* CSS for the button */
+  #rzp-button1 {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4285f4;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #rzp-button2 {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #4285f4;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* CSS for hover effect */
+  #rzp-button1:hover {
+    background-color: #3367d6;
+  }
+
+  #rzp-button2:hover {
+    background-color: #3367d6;
+  }
+
+  .gateway {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 200px;
+  }
+  .button2>a{
+    color: white;
+    text-decoration: none;
+  }
+</style>
+
+<body>
+  <div class="gateway">
+    <h1>Razorpay Payment GateWay</h1>
+    <button id="rzp-button1" class="button1">Click to Pay</button>
+    <br>
+    <button id="rzp-button2" class="button2"><a href="./index.html">Continue Shopping</a></button>
+  </div>
+
+
+</body>
+
+</html>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+  var options = {
+    key: "rzp_test_FNJDYsapCj7Bdm",
+    amount: "500", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    currency: "INR",
+    name: "HealthyMee",
+    description: "Test Transaction",
+    image: "https://example.com/your_logo",
+    order_id: JSON.parse(localStorage.getItem("order_id")), //This is a sample Order ID. Pass the `id` obtained in the response of above steps
+    handler: function (response) {
+      console.log("payment Id:- ", response.razorpay_payment_id);
+      console.log("Order Id:- ", response.razorpay_order_id);
+      console.log("Signature:- ", response.razorpay_signature);
+    },
+    prefill: {
+      name: "HealthyMee",
+      email: "deepak1812002@gmail.com",
+      contact: "7999764766",
+    },
+    notes: {
+      address: "HealthyMee Bangalore",
+    },
+    theme: {
+      color: "#3399cc",
+    },
+  };
+  var rzp1 = new Razorpay(options);
+  rzp1.on("payment.failed", function (response) {
+    alert(response.error.code);
+    alert(response.error.description);
+    alert(response.error.source);
+    alert(response.error.step);
+    alert(response.error.reason);
+    alert(response.error.metadata.order_id);
+    alert(response.error.metadata.payment_id);
+  });
+  document.getElementById("rzp-button1").onclick = function (e) {
+    rzp1.open();
+    e.preventDefault();
+    // window.location.href="./index.html"
+  };
+
+
+</script>
+<script src="script/rzp-geteway.js"></script>

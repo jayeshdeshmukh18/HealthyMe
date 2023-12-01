@@ -1,0 +1,94 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+}
+
+.checoutpagemaindiv{
+   /* border: 2px solid red; */
+   display: flex;
+   width: 90%;
+   margin: auto;
+   height: auto;
+  margin-top: 10px;
+}
+#productbox{
+    width: 70%;
+    /* border: 12px solid #c2b9ab; */
+    height: auto;
+}
+
+#productbox>div{
+display: flex;
+/* border:2px solid red; */
+}
+
+#ordersummarybox{
+    /* border: 5px solid black; */
+    width: 30%;
+    height: auto;
+}
+#one>img{
+    /* width: 100%; */
+    height: 200px;
+}
+#one{
+    width: 30%;
+}
+#two{
+    width: 70%;
+    margin-top: 25px;
+}
+#delete{
+    background-color: grey;
+    color: white;
+    border: none;
+    margin: 5px;
+    font-size: 22px;
+    width: 120px;
+}
+#price{
+    color: brown;
+    /* padding: 7px; */
+    font-size: larger;
+}
+#insideproductbox{
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#two{
+
+}
+
+.proceedtopay{
+    /* background-color: rgba(43, 236, 236); */
+    background-color: rgba(0.4, 0.5, 0.6, 0.8); 
+    color: white;
+    text-align: center;
+    margin: 0 15px 0 15px;
+    padding: 0px;
+}
+
+table{
+    width: 100%;
+}
+tr td:nth-child(2){
+   text-align: right;
+}
+.ordersummary{
+    margin: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    padding: 10px;
+    border-radius: 10px;
+
+}
+#payable{
+    color: green;
+    padding:10px;
+}
+#priceflex>table>tr>td{
+ margin: 20px;
+}
+.table{
+    padding: 10px;
+}

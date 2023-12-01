@@ -1,0 +1,26 @@
+.footerpart {
+    background-color: rgb(17, 15, 15);
+    height: auto;
+    padding-top: 20px;
+    margin-top: 90px;
+  }
+  .why-healthkart-img {
+    margin-bottom: 35px;
+  }
+  
+  .divmain_inside_footer {
+    width: 90%;
+    /* height: 250vh; */
+    margin: auto;
+    /* border: 2px solid yellow; */
+  }
+  .divtwofooter {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+  }
+  .divonefooter {
+    color: rgb(221, 213, 213);
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }

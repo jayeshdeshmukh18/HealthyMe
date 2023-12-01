@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Condensed&family=Roboto:wght@100&display=swap');
+    </style>
+    <link rel="stylesheet" href="../css/billing.css">
+
+    <title>Billing_Address</title>
+</head>
+
+<body>
+    <!-- logo part -->
+    <div class="dee_logo">
+        <!-- <img  src="furniturefinallogo.png" alt="logo" /> -->
+        <a href="index.html">
+            <h1>HealthyMee</h1>
+        </a>
+    </div>
+
+    <!-- border part -->
+    <div id="dee_border"></div>
+    <!-- billing address part  -->
+    <div class="dee_billing_shipping">
+        <div id="dee_shipping_part">
+            <!-- here shipping address code  -->
+            <b id="dee_billstyle">Shipping Address</b>
+
+            <table>
+                <form action="" id="form2_data">
+                    <tr>
+                        <td>
+                            <label for="dee_email"><b>Email</b></label>
+                        </td>
+                        <td>
+                            <input type="email" placeholder="Email..." id="dee_email2" name="dee_email" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dee_fname"><b>First Name</b></label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="First Name..." id="dee_fname2" name="fname" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dee_lname"><b>Last Name</b></label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Last Name..." id="dee_lname" name="lname" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dee_company">Company</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Company..." id="dee_company" name="dee_company" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dee_taxID">Tax ID</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Tax ID..." id="dee_taxID" name="dee_taxID" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dee_Address1"><b>Address Line 1</b></label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Address Line 1..." id="dee_Address12" name="dee_Address1" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dee_Address2">Address Line 2</label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Address Line 2..." id="dee_Address22" name="dee_Address2" />
+                            <p id="dee_address_line_para">
+                                We cannot ship to PO box, APO or FPO addresses.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dee_country"><b>Country</b></label>
+                        </td>
+                        <td>
+                            <!-- <input type="text" id="dee_country" name="dee_country" /> -->
+                            <select name="countries" placeholder="..." id="dee_country2">
+                                <option value="IND">India</option>
+                                <option value="RS">Russia</option>
+                                <option value="USA">USA</option>
+                                <option value="GR">Germanny</option>
+                                <option value="FR">France</option>
+                                <option value="UK">UK</option>
+                                <option value="JP">Japan</option>
+                                <option value="IT">Italy</option>
+                                <option value="CH">China</option>
+                                <option value="INDo">Indonesia</option>
+                                <option value="SA">South Africa</option>
+                                <option value="CA">Canada</option>
+                                <option value="IR">Ireland</option>
+
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dee_city"><b>City</b></label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="City..." id="dee_city2" name="dee_city" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dee_state">State </label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="State..." id="dee_state2" name="dee_state" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dee_ZIP">ZIP Code </label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="ZIP Code ..." id="dee_ZIP2" name="dee_ZIP" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dee_Phone"><b>#Phone </b> </label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Phone..." id="dee_Phone2" name="dee_Phone" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" id="dee_submit_details">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
+    <!-- part -2 here -->
+</body>
+
+</html>
+<script src="../script/billing.js" type="module"></script>
+
+<script>
+    function movenext() {
+        window.location.href = "Payment.html"
+    }
+</script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- hello everyone  -->

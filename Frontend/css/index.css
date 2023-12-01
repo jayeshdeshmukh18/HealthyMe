@@ -1,0 +1,281 @@
+body {
+  font-family: sans-serif;
+}
+#navbarSupportedContent {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+#checkout {
+  margin-left: 20px;
+  border: none;
+}
+nav {
+  color: black;
+  padding: 20px;
+  margin: 10px 0 10px 0;
+}
+.navbar {
+  width: 100%;
+  margin: auto;
+  background-color: white;
+}
+#navbar-healthyme {
+  padding: 22px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#brand {
+  font-size: x-large;
+  color: orange;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 1250px) {
+  #Signup {
+    display: none;
+  }
+}
+
+/* -----------------------------------------------------------------------------------------------------
+*/
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.mainheader {
+  width: 95%;
+  margin: auto;
+  padding: 5px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+}
+.two {
+  width: 50%;
+  margin-right: 60px;
+}
+#serach_input {
+  width: 97%;
+  padding: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(235 235 235);
+  font-size: large;
+}
+
+.one > a > img {
+  width: 50%;
+  text-align: left;
+  margin-left: 45px;
+}
+.three {
+  display: flex;
+  justify-content: space-evenly;
+  width: 16%;
+}
+.three > div {
+  width: 50%;
+}
+.three > div > span {
+  font-size: 40px;
+}
+.subheader {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  padding: 5px;
+}
+.divone {
+  width: 20%;
+  align-items: center;
+  padding: 5px;
+  font-size: large;
+  border: 2px solid skyblue;
+  border-radius: 8px;
+  align-items: center;
+  display: grid;
+  place-items: center;
+  grid-auto-columns: repeat(1fr, 2);
+  grid-template-columns: 0.1fr 1fr;
+
+  /* text-align: center; */
+}
+.divtwo {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: large;
+}
+.divtwo > div {
+  padding: 10px;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+
+.divRepublicsdaysale {
+  background-color: #effbfc;
+  text-align: center;
+  padding: 14px;
+  font-size: smaller;
+  margin-top: 85px;
+}
+
+.middlediv {
+  display: flex;
+  width: 97%;
+  margin: auto;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+.middlediv > div > img {
+  border-radius: 8px;
+}
+#categorydiv {
+  display: flex;
+  margin: top 20px;
+}
+.divshopbycategory {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  /* border: 2px solid skyblue; */
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#categorydiv > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+#categorydiv > div > img {
+  width: 70%;
+}
+#brandsdiv > div > img {
+  width: 100%;
+}
+#shop {
+  padding: 10px;
+}
+/* _______________________brands __________________________ */
+#brandsdiv {
+  display: flex;
+  margin: top 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.divbrandsection {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+#brandsdiv > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+#brandsdiv > div > img {
+  width: 70%;
+}
+#brandsdiv > div > img {
+  width: 100%;
+}
+#shop {
+  padding: 10px;
+}
+.whyhealthcard {
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+#whymee {
+  margin: top 20px;
+}
+.imgdiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  margin-top: 30px;
+}
+.imgdiv > img {
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.mainslidecoursal {
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+.mainslidecoursal img {
+  border-radius: 15px;
+}
+.footerpart {
+  background-color: rgb(17, 15, 15);
+  height: auto;
+  padding-top: 20px;
+}
+.why-healthkart-img {
+  margin-bottom: 35px;
+}
+
+.divmain_inside_footer {
+  width: 90%;
+  /* height: 250vh; */
+  margin: auto;
+  /* border: 2px solid yellow; */
+}
+.divtwofooter {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+.divonefooter {
+  color: rgb(221, 213, 213);
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/* serach funtionlity */
+#myInput {
+  background-image: url("/css/searchicon.png"); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
